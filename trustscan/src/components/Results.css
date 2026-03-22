@@ -1,0 +1,75 @@
+.re-top { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.re-company { display: flex; flex-direction: column; }
+.re-company-name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); }
+.re-company-type { font-size: .78rem; color: var(--gray400); }
+
+.re-hero { margin-bottom: 1.5rem; }
+.re-score-wrap { display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+.re-score-circle { position: relative; width: 140px; height: 140px; flex-shrink: 0; }
+.re-gauge-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.re-score-inner {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.re-score-num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; line-height: 1; }
+.re-score-lbl { font-size: .7rem; color: var(--gray400); margin-top: 2px; }
+.re-score-info { flex: 1; min-width: 240px; }
+.re-score-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+.re-score-desc { font-size: .9rem; color: var(--gray600); line-height: 1.6; margin-bottom: 1.25rem; }
+.re-score-metrics { display: flex; gap: 2rem; }
+.re-metric { display: flex; flex-direction: column; }
+.re-metric-num { font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; line-height: 1; }
+.re-metric-lbl { font-size: .75rem; color: var(--gray400); }
+
+.re-layout { display: grid; grid-template-columns: 1fr 280px; gap: 1.5rem; align-items: start; }
+.re-main { min-width: 0; }
+
+.re-tabs { display: flex; gap: 4px; margin-bottom: 1rem; border-bottom: 1px solid var(--gray200); padding-bottom: 0; }
+.re-tab {
+  padding: .625rem 1rem; font-size: .85rem; font-weight: 600;
+  color: var(--gray600); background: none; border: none;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  transition: all .15s; cursor: pointer;
+}
+.re-tab:hover { color: var(--navy); }
+.re-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+.re-items { display: flex; flex-direction: column; gap: .75rem; }
+.re-item { padding: 1rem 1.25rem; }
+.re-item-miss { border-left: 3px solid var(--red); }
+.re-item-part { border-left: 3px solid var(--orange); }
+.re-item-ok { border-left: 3px solid var(--green); }
+.re-item-head { display: flex; align-items: flex-start; gap: 12px; }
+.re-item-icon {
+  width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+}
+.re-icon-miss { background: rgba(239,68,68,.1); color: var(--red); }
+.re-icon-part { background: rgba(245,158,11,.1); color: var(--orange); }
+.re-icon-ok { background: rgba(16,185,129,.1); color: var(--green); }
+.re-item-info { flex: 1; min-width: 0; }
+.re-item-q { font-size: .9rem; font-weight: 600; color: var(--navy); margin-bottom: .375rem; }
+.re-item-meta { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: .375rem; }
+.re-item-impact { font-size: .8rem; color: var(--gray600); line-height: 1.5; }
+.re-item-reason { font-size: .8rem; color: var(--orange); line-height: 1.5; }
+.re-item-evidence { font-size: .8rem; color: var(--green); line-height: 1.5; }
+.re-fix-btn { flex-shrink: 0; margin-left: auto; align-self: center; }
+
+.re-sidebar { display: flex; flex-direction: column; gap: 1rem; position: sticky; top: 80px; }
+.re-domains-title { font-size: .875rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; }
+.re-domain { display: grid; grid-template-columns: 1fr 80px 36px; align-items: center; gap: 8px; margin-bottom: .5rem; }
+.re-domain-name { font-size: .75rem; color: var(--gray600); }
+.re-domain-bar-wrap { height: 5px; background: var(--gray100); border-radius: 100px; overflow: hidden; }
+.re-domain-bar { height: 100%; border-radius: 100px; transition: width 1s ease; }
+.re-domain-pct { font-size: .75rem; font-weight: 600; text-align: right; }
+
+.re-cta-title { font-size: .975rem; font-weight: 700; color: var(--navy); margin-bottom: .375rem; }
+.re-cta-desc { font-size: .8rem; color: var(--gray600); line-height: 1.6; margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  .re-layout { grid-template-columns: 1fr; }
+  .re-sidebar { position: static; }
+  .re-score-wrap { gap: 1.5rem; }
+}

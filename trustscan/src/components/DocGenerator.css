@@ -1,0 +1,39 @@
+.dg-top { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.dg-gap-info { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.dg-gap-q { font-size: .85rem; color: var(--gray600); }
+.dg-header { margin-bottom: 1.5rem; }
+.dg-title { font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; color: var(--navy); margin-bottom: .5rem; }
+.dg-subtitle { font-size: .95rem; color: var(--gray600); }
+.dg-wizard { padding: 1.75rem; }
+.dg-questions { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.5rem; }
+.dg-q {}
+.dg-q-label { font-size: .875rem; font-weight: 600; color: var(--navy); margin-bottom: .625rem; }
+.dg-q-opts { display: flex; gap: 6px; flex-wrap: wrap; }
+.dg-opt {
+  font-size: .825rem; padding: .4rem .875rem;
+  border: 1.5px solid var(--gray200); border-radius: 100px;
+  background: var(--gray50); color: var(--gray600);
+  transition: all .15s; cursor: pointer;
+}
+.dg-opt:hover { border-color: var(--blue-light); color: var(--navy); background: var(--white); }
+.dg-opt.selected { border-color: var(--blue); background: rgba(29,95,212,.06); color: var(--blue); font-weight: 600; }
+.dg-hint { font-size: .8rem; color: var(--gray400); margin-bottom: .75rem; }
+.dg-gen-btn { height: 52px; border-radius: 12px; }
+
+.dg-result {}
+.dg-result-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;
+}
+.dg-result-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--navy); }
+.dg-result-subtitle { font-size: .8rem; color: var(--gray400); margin-top: 2px; }
+.dg-result-actions { display: flex; gap: 6px; }
+.dg-doc-preview { padding: 2rem; margin-bottom: 1.25rem; max-height: 60vh; overflow-y: auto; }
+.dg-doc-content { font-size: .9rem; color: var(--gray800); line-height: 1.75; }
+.dg-doc-content h1 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--navy); margin: 1.5rem 0 .75rem; border-bottom: 2px solid var(--gray100); padding-bottom: .5rem; }
+.dg-doc-content h2 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin: 1.25rem 0 .5rem; }
+.dg-doc-content h3 { font-size: .95rem; font-weight: 700; color: var(--gray800); margin: 1rem 0 .375rem; }
+.dg-doc-content p { margin-bottom: .75rem; }
+.dg-doc-content li { margin-left: 1.25rem; margin-bottom: .25rem; }
+.dg-doc-content strong { font-weight: 600; color: var(--navy); }
+.dg-done-actions { display: flex; gap: .75rem; flex-wrap: wrap; }

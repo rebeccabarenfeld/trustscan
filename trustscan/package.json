@@ -16,32 +16,3 @@
     "vite": "^5.0.0"
   }
 }
-```
-
-→ **Commit changes**
-
----
-
-### Fichier 2 — Modifie les settings Vercel
-
-Dans Vercel → ton projet → **Settings → General** :
-```
-Build Command :
-npm install && npm run build
-
-Output Directory :
-dist
-
-Node.js Version :
-20.x
-```
-
-→ **Save** → **Redeploy**
-
----
-
-## Alternative encore plus simple
-
-Dans Vercel → Settings → General → **Build Command** :
-```
-npm install && npx vite build
